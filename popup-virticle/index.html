@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body, html {
+			 margin: 0;
+			 padding: 0;
+			 font-family: Roboto;
+		}
+	
+		.modalOverlay {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			    background: rgba(0, 0, 0, 0.37);
+			display: none;
+		}
+	
+	.modal-body {
+		position: relative;
+	    background-color: #fff;
+	    border-radius: 6px;
+	    outline: 0;
+	    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+	    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+	    width: 700px;
+	    -webkit-transition: all .3s;
+	    transform: translate(0,-100%);
+	    overflow: hidden;
+	    opacity: 0;
+	    margin: auto;
+	}
+
+
+	.action .modalOverlay{
+		 display: block;
+	}
+	.action .modal-body {
+	    margin: 30px auto;
+		transform: translate(0,0);
+	    opacity: 1;
+
+
+	}
+	.heading {
+		font-weight: 400;
+		text-align: center;
+	}
+	.subheading {
+		font-weight: 300;
+		text-align: center;
+		color: #4e4e4e;
+	}
+	.email-input {
+		width: 100%;
+	    border: 1px solid #ddd;
+	    border-radius: 50px;
+	    height: 40px;
+	    padding-left: 15px;
+	    outline: none;
+	    font-size: 16px;
+	     box-sizing: border-box;
+	     margin-bottom: 10px;
+	}
+	.email-input:focus {
+		border-color: #0e99cb;
+	}
+	.email-box {
+		width: 90%;
+    	margin: auto;
+	}
+	.start-btn {
+		font-size: 17px;
+	    background: #0e99cb;
+	    color: #fff;
+	    border: none;
+	    outline: none;
+	    width: 100%;
+	    border-radius: 50px;
+	    margin-top: 15px;
+	    padding: 10px;
+	    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+
+	}
+	.modal-content {
+		padding: 15px;
+	}
+	.tips-img {
+	width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-bottom: -5px;
+
+	}
+	.promise {
+		text-align: center;
+    display: block;
+    color: #888;
+    margin-top: 10px;
+	}
+	.remove-btn {
+		position: absolute;
+		right: 15px;
+		top: 8px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.halfbox {
+		float: left;
+    width: 50%;
+    position: relative;
+	}
+	@media (max-width: 767px) {
+		.modal-body {
+			width: 100%;
+			margin-top: 0 !important;
+		}
+		.email-box {
+			width: 90%;
+		}
+	}
+
+	</style>
+</head>
+<body>
+<button id="showModal" style="position: relative;z-index:10000000000">Show modal</button>
+	
+
+	<div id="myModal" class="myModal"> 
+		<div class="modalOverlay"></div>
+		<div class="modal-body">
+		<div class="remove-btn">x</div>
+			<div class="halfbox">
+			<div class="fullHeight">
+				<img class="tips-img" src="tips.jpg" alt="">
+				
+			</div>
+			</div>
+			<div class="halfbox">
+				<div class="modal-content">
+					<h2 class="heading">GET EXCLUSIVE CAREER TIPS</h2>
+					<h3 class="subheading">Learn how to make the best career decisions with the insights <br> that we share.</h3>
+					<div class="email-box">
+						<input class="email-input" type="text" placeholder="Enter your email">
+					<input class="email-input" type="text" placeholder="Enter your email">
+					<input class="email-input" type="text" placeholder="Enter your email">
+
+						<button class="start-btn">START NOW</button>
+						<small class="promise">We promise to not use your email for spam!</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		var showModal = document.getElementById('showModal');
+		var myModal = document.getElementById('myModal');
+		var removeBtn = document.getElementsByClassName('remove-btn')[0];
+	
+
+		showModal.addEventListener("click", function(){
+    		myModal.classList.add("action");
+		});
+
+		removeBtn.addEventListener("click", function(){
+    		myModal.classList.remove("action");
+    		
+		});
+
+	</script>
+</body>
+</html>
