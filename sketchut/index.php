@@ -307,74 +307,24 @@
 				
 			</div>
 -->
-			<div class="container spacethis">
+
+			<div class="container-fluid spacethis" style="margin-bottom: 0">
 				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="contact-form-area">
-								<?php
+					<div class="col-md-7" style="padding-left: 0">
+						<iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.4820866759815!2d77.23191141744384!3d28.555283000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd34704b36bf%3A0x95557006719b507!2sAccess+Health+Care!5e0!3m2!1sen!2sin!4v1506591942574"  height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-						        $action = ( array_key_exists( 'action', $_REQUEST) ? $_REQUEST['action'] : "" );
-
-						        if ($action=="") 
-						            {
-						            ?>
-						            <form  class="form-modify" action="" method="POST" enctype="multipart/form-data">
-						            	<div class="form-group">
-								            <input type="hidden" name="action" value="submit">
-						            		
-						            	</div>
-								         <div class="form-group">
-								         	
-								            <input class="form-control" name="name" type="text" value="" placeholder="Name" / required><br>
-								         </div>
-								         <div class="form-group">
-								            <input class="form-control" name="email" type="text" value="" placeholder="Email" / required><br>
-								         </div>
-								         <div class="form-group">
-								            <input name="phone" class="form-control" type="text" value="" placeholder="Mobile" / required><br>
-								         	
-								         </div>
-								         <div class="form-group">
-								            <textarea name="area" class="form-control"  rows="8" placeholder="Message"></textarea><br>
-								         	
-								         </div>
-								         <div class="form-group text-center">
-								         	<button type="submit" class="btn btn-styled big" value="Send email">Submit</button>
-								         	
-								         </div>
-
-								          
-								            </form>
-						            <?php
-						            } 
-
-
-						        else                /* send the submitted data */
-						            {
-						            $name=$_REQUEST['name'];
-						            $email=$_REQUEST['email'];
-						            $phone=$_REQUEST['phone'];
-						            $area=$_REQUEST['area'];
-
-						            if (($name=="")||($email=="")|| ($phone=="")||($area==""))
-						                {
-						            echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-						              }
-						            else{   
-						              $from="From: $name<$email>\r\nReturn-path: $email";
-						                $subject="area sent using your contact form";
-
-						                
-						            mail("info@edunuts.com", $subject, $area, $phone, $from);
-
-
-						                   header("Location: thankyou.php");
-
-						              }
-						            }  
-						        ?>
-						</div>
-
+					</div>
+					<div class="col-md-5">
+						<h4 class="heading">Contact Us</h4>
+						<br>
+						<h4><p> <strong>Head Office </strong><br>
+						B-36 your address Pura, Near<br>
+						Nirman Vihar Metro Station,</p>
+						<p><strong>Helplines:</strong><br>
+						+91 7210 56 2014<br>
+						<strong>Email:</strong><br>
+						youremail@gmail.com</p>
+						</h4>
 					</div>
 				</div>
 			</div>
