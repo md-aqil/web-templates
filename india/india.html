@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	
+	<style>
+		
+
+			.front-banner-box {
+				
+				height: 950px;
+			}
+
+			.india-title {
+				background-image:url('img/loop-img.jpg');
+			    font-size:300px;
+			    text-transform:uppercase;
+			    text-align:center;
+			    -webkit-background-clip:text;
+			    -webkit-text-fill-color:transparent;
+			    margin:0;
+			    background-position: 0% 0%;
+			    font-weight: bolder;
+			    margin-bottom: -100px;
+			     letter-spacing: 16px;
+			     /*background-repeat: repeat-x;*/
+			     -webkit-animation: bg-anim 30s linear infinite;
+				}
+
+				.bg-color {
+					width: 100%;
+					height: 520px;
+					background-color: #E1DECF;
+				}
+				
+			.front-banner-img img{
+				width: 100%;
+			}
+			.front-banner-img {
+				position: relative;
+			}
+			.front-banner-img .ovl{
+				width: 100%;
+			    height: 330px;
+			    background: #E1DECF;
+			    position: absolute;
+			    top: 112px;
+			    z-index: -1;
+			}
+			.g-title {
+				color: #bb9c57;
+				font-size: 60px;
+				 font-weight: bold;
+				 text-decoration: underline;
+				 margin-top: 100px;
+			}
+			
+			.width100 {
+				width: 100%;
+			}
+			.pl0 {
+				padding-left: 0;
+			}
+
+			@-webkit-keyframes bg-anim {
+				from {
+			     background-position: 0% 0%;
+				}
+				to {
+			     background-position: 100% 0%;
+				}
+			}
+
+			.elephant {
+				width: 80%;
+				display: block;
+				float: right;
+				
+			}
+			.holy-img {
+				background: url(img/holy.jpg) center no-repeat;
+				width: 100%;
+				height: 1000px;
+				background-size: 100%;
+
+			}
+			.eid-img {
+			  background: url(img/eid.png) center no-repeat;
+			  width: 100%;
+			  height: 900px;
+			  background-size: 100%;
+
+			}
+			.htxt {
+				position: absolute;
+			    top: 50%;
+			    left: 13%;
+			    width: 430px;
+			}
+			.orng {
+				color: #ff6c00;
+			}
+			.green {
+				color: #00a500;
+			}
+			/*modal css*/
+			.main-modal {
+			width: 40%;
+			    height: 400px;
+			    background: #ddd;
+			    top: 0;
+			    left: 30%;
+			    position: absolute;
+			   	transform: translate(0%, -100%);
+
+			}
+			.show-modal {
+			   	transform: translate(0%, 0%);
+
+			}
+			#m-content {
+				background: url(../img/panel.jpg);
+				width: 100%;
+				height:auto;
+				border: none;
+				position: relative;
+				margin-top: 100px;
+			}
+			#m-content .form-control{
+				background: none;
+				box-shadow: none;
+				font-size: 20px;
+			}
+			#m-content::before, #m-content::after {
+				right: 10%;
+			    background: transparent url(../img/cable.png) 0 0 no-repeat;
+			    position: absolute;
+			    display: block;
+			    height: 860px;
+			    width: 30px;
+			    content: "";
+			    top: -825px;
+			    z-index: 1;
+			}
+			 #m-content::after {
+				left: 10%;
+
+			 }
+			  #m-content .modal-footer{
+				padding-top: 0;
+				border:none;
+			 }
+			 .mt0 {
+			 	 margin-top: 0;
+			 }
+			
+			 .mpr {
+			 	 font-size: 16px;
+			 }
+			.header {
+				height: 55px;
+				background: #e1decf;
+			}
+			.header .modal-btn {
+				border: 1px solid #c3c2bd;
+			    padding: 8px 10px;
+			    margin-top: 16px;
+			    border-radius: 3px;
+			    cursor: pointer;
+			    display: inline-block;
+			    float: right;
+			    font-size: 15px;
+			    -webkit-transition: all .2s;
+			    
+			}
+			.header .modal-btn:hover {
+				background: #ff6c00;
+				color: #fff;
+			}
+			.india-map img  {
+				 width: 100%;
+			}
+			.ftr {
+				 margin-right: 15px;
+			    margin-top: 15px;
+			}
+
+
+			.front-banner-box-taj {
+			      position: relative;
+			      width: 100%;
+			      height: 1400px;
+			    }
+			 
+			    .front-banner-box-taj .front-banner-overlay {
+			      width: 100%;
+			      height: 100%;
+			      /*background: rgba(0, 0, 0, .5);*/
+			      position: absolute;
+			      top: 0;
+			      right: 0;
+			      color: #fff;
+			    }
+
+			    ._elph {
+			      width: 80%;
+			       height: 500px;
+			    }
+			    ._tgr {
+			       width: 80%;
+			      height: 400px;
+			 }
+			 
+
+			@media (max-width: 767px) {
+
+			    ._elph {
+			      width: 100% !important;
+			    }
+
+			    ._tgr {
+			       width: 100% !important;
+			    }
+			    .front-banner-box-taj {
+			      height: 415px !important;
+			    }
+			    
+			 .bg-color {
+			 	height: 300px;
+			 }
+			 .welcom-title {
+			 	font-size: 35px;
+			    letter-spacing: 15px;
+			    margin-top: 44px;
+			    padding-top: 30px;
+			 }
+			 .m-logo a  {
+			 	color: #fff;
+			 	font-weight: 300;
+			 }
+			 .india-title {
+			 	font-size: 100px;
+			 	letter-spacing: 13;
+			 	margin-bottom: -10px;
+			 	margin-top: 4px;
+			 }
+			 .front-banner-box {
+			 	height: 320px;
+			 }
+			 .g-title {
+			 	font-size: 40px;
+			 }
+			 .holy-img {
+			 	height: 280px;
+			 }
+			 .htxt {
+			 	left: 9%;
+			 	width: 160px;
+			 }
+			
+			 
+			    
+			}
+
+			@media (min-width: 1200px) {
+				.container {
+				    width: 1170px;
+				}
+			}
+			
+
+			@media (max-width: 992px){
+			
+				.container {
+				    width: 970px;
+				}
+			}
+
+
+			@media (max-width: 768px){
+			
+				.container {
+				    width: 750px;
+				}
+
+
+			}
+			
+			.container {
+			    padding-right: 15px;
+			    padding-left: 15px;
+			    margin-right: auto;
+			    margin-left: auto;
+			}
+
+			/*flex-style*/
+
+			.flex-box {
+				display: flex;
+				flex-wrap: wrap;
+				
+			}
+			.flex-item {
+				flex-basis: 380px;
+				flex-grow: 1;
+
+			}
+
+	</style>
+
+
+
+
+
+		<div class="front-banner-box">
+			<div class="bg-color">
+				<!-- <p class="welcom-title"><span class="orng">WEL</span>C<span class="green">OME</span></p> -->
+				<h1 class="india-title">INDIA</h1>
+				<div class="front-banner-img">
+					<img src="img/red-fort3.png" alt="">
+					<div class="ovl hidden-xs"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="flex-box">
+				<div class="flex-item">
+					<h1 class="g-title">HISTORY</h1>
+					<h3>Mohandas karamchand Gandhi</h3>
+					<p>
+						(1869-1948) was one of the few men in history to fight simultaneously on moral, religious, political, social, economic, and cultural fronts. During his time as a lawyer in South Africa he developed his strategy of non-violence: the idea of opposing unjust laws by non-violent protest. He led the Indian National Congress party in three major campaigns against British rule, each culminating in his arrest.
+					</p>
+					<p>
+						In Gandhi, a short introduction to Gandhi's life and thought, Bhikhu Parekh outlines both Gandhi's major philosophical insights and the limitations of his thought. Written with extensive access to Gandhi's writings in Indian languages to which most commentators have little or no access, Parekh looks at Gandhi's cosmocentric anthropology,
+					</p>
+					<p>
+						his spiritual view of politics, and his theories of oppression, non-violent action, and active citizenship. He also considers how the success of Gandhi's principles were limited by his lack of coherent theories of evil, and of state and power. Gandhi's view of man as ascetic allows no room for expressions of the cultural, artistic, or intellectual. Furthermore,
+					</p>
+				</div>
+				<div class="flex-item pl0">
+					<div class="atvImg no-shadow" style="width: 100%;height: 600px;">
+						<img class="gandhi" src="img/gandhi.png" alt="">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="">
+					<img class="width100" src="img/att.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="flex-box">
+				<div class="flex-item">
+					<h1 class="g-title">CULTURE</h1>
+					<h3>India is one of the world's lodest civilizations.</h3>
+					<p>
+						Religious activities are deeply engrossed in Indian culture. These activities are lavish household affairs with everyone contributing their mite. These traditional activities result in persons learning about their heritage, 
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quia nobis est consequatur nihil laboriosam nam, mollitia, eos esse consectetur inventore, nostrum dolorum alias ab magni laborum eaque repellat earum.
+					</p>
+					<p>
+						 try to be sarcastic about them. However, if tried to understand logically and learning from experience, we discover the nuances which are thoroughly scientific and meant for purification of the body and soul.
+					</p>
+
+				</div>
+				<div class="flex-item">
+					<div class="atvImg pull-right no-shadow _elph">
+					<img class="elephant" src="img/elephant.png" alt="">
+	  					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
+	  					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
+	  					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
+	  					 <div class="atvImg-layer" data-img="img/elephant.png"></div>
+	  					 
+						
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row" style="position: relative;">
+				<div class="holy-img">
+					<div class="htxt">
+						<h3>Holy Festival</h3>
+						<p class="hidden-xs">
+							Holi is the most famous festival of colours. It is celebrated every year in the month of Falgun (March) by the people of Hindu religion. It is celebrated with great joy and enthusiasm as it brings feeling of love and closeness among people.
+							 Colourful colours are spread out by the people over each other. At this day we meet each other, handshake, hug and apply abeer on the forehead to each other. We sing religious songs (or Fagua geet) with musical instruments like Dholak, Kirtal, etc. At this special day we eat special things like gujhiya, sweets, chips, papad, halwa, pani puri, dahi bade, etc. A day before the colourful holi, Holika Dahan takes place.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+
+		<div class="container">
+			<div class="flex-box">
+				<div class="flex-item">
+					<h1 class="g-title">ANIMALS</h1>
+					<h3>Bengal Tiger</h3>
+					<p>
+						Various types of wild animals are found in the forests of India. Since primitive days the wild animals have close relationship with the mankind. The major wild animals of India are elephant, tiger, lion, rhino, bear etc. They live in the dense forests.
+					</p>
+					<p>
+						The Sundarban of West Bengal is the home of the Royal Bengal Tigers. Similarly lions live in the Gir Forest of Gujarat, and rhinoceroses live in the dense, marshy and moist forests of Assam, north Bengal and Tripura.
+					</p>
+					<p>
+						Elephants and tigers live in the forests of Orissa, Madhya Pradesh, and Karnataka and in the foot Himalayas and Chhotnagpur plateaus.
+					</p>
+
+	 
+				</div>
+				<div class="flex-item">
+					<img class="elephant" src="img/tiger.png" alt="">
+					
+				</div>
+			</div>
+		</div>
+
+
+		<div class="container-fluid" >
+				<div class="row">
+					<div class="front-banner-box-taj">
+					<!-- <div class="front-banner-img"></div> -->
+					<img class="width100" src="img/taj.jpg" alt="">
+				
+				<div class="front-banner-overlay" id="divSnow">
+				</div>
+			</div>
+				</div>
+			</div>
+
+</body>
+</html>
