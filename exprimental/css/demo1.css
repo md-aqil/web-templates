@@ -1,6 +1,6 @@
 .demo-1 {
 	--color-text: #fff;
-	--color-bg: #000;
+	
 	--color-link: #f9d77e;
 	--color-link-hover: #fff;
 	--color-info: #efc453;
@@ -77,7 +77,7 @@
 	left: calc(-1 * var(--gap-horizontal));
 	width: calc(100% + var(--gap-horizontal) * 2);
 	height: calc(100% + var(--gap-vertical) * 2);
-	background: url(../img/img1.jpg) no-repeat 50% 0;
+	background: url(../img/aqil2.jpg) no-repeat 100% 100%;
 	background-color: var(--blend-color-1);
 	background-size: cover;
 	transform: translate3d(0,0,0);

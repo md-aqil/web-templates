@@ -4,19 +4,6 @@
 	box-sizing: border-box;
 }
 
-html {
-	background: #000;
-}
-
-body {
-	font-family: 'Source Sans Pro', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	margin: 0;
-	padding: 0;
-}
-
-
 .demo-3 {
 	--color-text: #fbd54a;
 	--color-bg: #333;

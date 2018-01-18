@@ -10,8 +10,8 @@
 	</head>
 	<body class="demo-3 demo-1">
 		
-		<main class="main main--demo-3">
-			<div class="content content--demo-3">
+		<main class="main main--demo-3 ">
+			<div class="content content--demo-3 scroll-box" data-speed="5">
 				<div class="hamburger hamburger--demo-3 js-hover">
 					<div class="hamburger__line hamburger__line--01">
 						<div class="hamburger__line-in hamburger__line-in--01"></div>
@@ -62,10 +62,12 @@
 					<path class="shape-overlays__path"></path>
 				</svg>
 			</div>
-
-
 		</main>
-
+		<div id="content">
+			<section class="container  scroll-box"  data-speed="1">
+				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dolorum consequatur eius eaque architecto laborum quidem, velit officia, deleniti earum quaerat illo nisi modi odio voluptate placeat impedit. Fuga, minima?</h1>
+			</section>
+		</div>
  			
 		<script src="js/jquery.min.js"></script>
 		<script src="js/demo2.js"></script>
@@ -73,9 +75,33 @@
 		<script src="js/overlay.js"></script>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/demo.js"></script>
+		<script src="js/WOW.js"></script>
+		<script src="js/jquery-inertiaScroll.js"></script>
+
+		<script>
+					wow2 = new WOW(
+		                {
+		                boxClass:     'wow-reveal',      // default
+		                animateClass: 'reveal-text', // default
+		                offset:       0,          // default
+		                mobile:       true,       // default
+		                live:         true        // default
+		              }
+		              )
+		              wow2.init();
+
+          		new WOW().init();
+
+		</script>
 
 		<script>
 		
+			  $(".scroll-box").inertiaScroll({
+			    // parent: $("#content")
+			  });
+
+  
+
 			//     $('.global-menu__wrap a').each(function() {
 			//     var delay = $(this).index() * 100 + 'ms';
 
