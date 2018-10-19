@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css?family=Niramit:300,400,500');
+
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(../fonts/varelaround-regular.ttf);
+}
+
+
+
+h1,h2,h3,h4 {
+   font-family: myFirstFont;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Niramit;
+}
+
+.flex-box {
+	display: flex;
+	    height: 100vh;
+	    align-items: center;
+}
+
+.flex-item {
+	flex-basis: 50%;
+}
+
+/*.design-image {
+	overflow: hidden;
+}*/
+.design-image img {
+	width: 100%;
+	height: 600px;	
+}
+
+
+.design-image {
+	width: 105%;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+}
+.design-image  .overlay {
+	position: absolute;
+}
+.heading {
+	font-size: 45px;
+	color: #444;
+	line-height: 1.2;
+}
+.subheading {
+	font-size: 18px;
+	color: #6d6d6d;
+	font-family: 'Niramit', sans-serif;
+    word-spacing: 3px;
+    line-height: 1.7;
+
+}
+
+.swiper-round-image .swiper-slide img {
+	width: 100%;
+	height: 480px;
+	object-fit: cover;
+	border-radius: 0px 0px 0px 70px;
+	box-shadow: 20px 20px 40px 0 rgba(183,183,183,0.65);
+}
+.swiper-round-image .swiper-slide:nth-child(odd) img {
+	margin-top: -70px;
+}
+
+.swiper-container {
+	padding: 100px 0;
+
+}
+
+.swiper-button-prev, .swiper-button-next {
+	top: inherit;
+	margin-top: 40px;
+	width: 20px;
+	background: url(../img/right-arrow.svg) center no-repeat;
+	margin-right: 150px;
+}
+
+.swiper-button-prev {
+	right: 100px;
+	    left: inherit;
+	    transform: rotate(180deg);
+}
+
+.info {
+	position: absolute;
+    color: red;
+    top: -80px;
+}
+
+.swp-content {
+	background: #fff;
+	    z-index: 1;
+	    position: absolute;
+	    bottom: 50px;
+	    right: -70px;
+	    padding: 10px 50px;
+	    border-radius: 1px;
+	    box-shadow: 20px 20px 30px 0 rgba(183,183,183,0.65);
+}
+.swp-content h4{
+	margin-top: 0;
+}
+.swp-content a {
+	color: #555;
+
+ }
+
+ .link {
+ 	display: block;
+ 	position: relative;
+ 	margin-left: -6px;
+ }
+  .link:after {
+  	content: '';
+  	background: url(../img/right-arrow.svg);
+  	width: 23px;
+  	height: 15px;
+  	position: absolute;
+  	background-repeat: no-repeat;
+  	background-size: 15px;
+  	left: 62px;
+  	top: 2px;
+  }
+
+  .swp-review {
+      box-shadow: 3px 12px 100px 0 rgba(183, 183, 183, 0.38);
+      padding: 35px;
+      border-radius: 20px;
+      position: relative;
+  }
+
+.swp-review p {
+    line-height: 1.7;
+    font-size: 16px;
+    color: #737373;
+    font-weight: 400;
+}
+
+.swp-review:before {
+	content: '';
+	background: url(../img/point.svg);
+	display: block;
+}
+
+.swp-review:before {
+    content: '';
+    background: url(../img/point.svg) no-repeat;
+    display: block;
+    display: block;
+    width: 340px;
+    height: 48px;
+    z-index: 99;
+    position: absolute;
+    bottom: -27px;
+    right: 0;
+    background-repeat: no-repeat;
+}
+
+.swipe-user {
+	margin-top: 35px;
+	    margin-left: 22px;
+}
+.swipe-user img {
+	width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		border: 3px solid red;
+}
